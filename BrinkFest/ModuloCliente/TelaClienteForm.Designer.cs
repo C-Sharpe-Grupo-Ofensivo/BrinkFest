@@ -125,6 +125,7 @@
             // btnCancelar
             // 
             btnCancelar.BackColor = SystemColors.InactiveBorder;
+            btnCancelar.DialogResult = DialogResult.Cancel;
             btnCancelar.Location = new Point(572, 184);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(96, 60);
