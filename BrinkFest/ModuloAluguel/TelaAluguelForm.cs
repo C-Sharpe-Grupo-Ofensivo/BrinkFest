@@ -126,5 +126,10 @@ namespace BrinkFest.WinApp.ModuloAluguel
             if (rdbAntigo.Checked == true)
                 rdbNovo.Checked = false;
         }
+
+        private void cmbTemas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

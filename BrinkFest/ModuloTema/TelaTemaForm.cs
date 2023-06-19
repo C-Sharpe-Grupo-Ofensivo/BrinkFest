@@ -33,7 +33,9 @@ namespace BrinkFest.WinApp.ModuloTema2
 
             txtTema2.Text = tema.tema;
         }
-        private void btnGravar_Click(object sender, EventArgs e)
+ 
+
+        private void btnGravar_Click_1(object sender, EventArgs e)
         {
             Tema tema = ObterTema();
 
@@ -44,6 +46,12 @@ namespace BrinkFest.WinApp.ModuloTema2
                 TelaPrincipalForm.Instancia.AtualizarRodape(erros[0]);
 
                 DialogResult = DialogResult.None;
+            }
+            
+
+            if (txtTema2.Text == "")
+            {
+                MessageBox.Show("Campo tema precisa ser preenchido");
             }
         }
     }

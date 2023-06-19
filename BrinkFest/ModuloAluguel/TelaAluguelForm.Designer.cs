@@ -48,6 +48,10 @@
             cmbCliente = new ComboBox();
             rdbNovo = new RadioButton();
             rdbAntigo = new RadioButton();
+            txtValorEntrada = new TextBox();
+            txtValorTotal = new TextBox();
+            label8 = new Label();
+            label9 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -130,6 +134,7 @@
             cmbTemas.Name = "cmbTemas";
             cmbTemas.Size = new Size(137, 23);
             cmbTemas.TabIndex = 33;
+            cmbTemas.SelectedIndexChanged += cmbTemas_SelectedIndexChanged;
             // 
             // txtHorarioFinal
             // 
@@ -248,12 +253,50 @@
             rdbAntigo.UseVisualStyleBackColor = true;
             rdbAntigo.CheckedChanged += rdbAntigo_CheckedChanged;
             // 
+            // txtValorEntrada
+            // 
+            txtValorEntrada.Location = new Point(110, 368);
+            txtValorEntrada.Name = "txtValorEntrada";
+            txtValorEntrada.ReadOnly = true;
+            txtValorEntrada.Size = new Size(152, 23);
+            txtValorEntrada.TabIndex = 45;
+            // 
+            // txtValorTotal
+            // 
+            txtValorTotal.Location = new Point(110, 319);
+            txtValorTotal.Name = "txtValorTotal";
+            txtValorTotal.ReadOnly = true;
+            txtValorTotal.Size = new Size(152, 23);
+            txtValorTotal.TabIndex = 44;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(19, 372);
+            label8.Name = "label8";
+            label8.Size = new Size(79, 15);
+            label8.TabIndex = 43;
+            label8.Text = "Valor Entrada:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(34, 323);
+            label9.Name = "label9";
+            label9.Size = new Size(64, 15);
+            label9.TabIndex = 42;
+            label9.Text = "Valor Total:";
+            // 
             // TelaAluguelForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(495, 425);
+            Controls.Add(txtValorEntrada);
+            Controls.Add(txtValorTotal);
+            Controls.Add(label8);
+            Controls.Add(label9);
             Controls.Add(rdbAntigo);
             Controls.Add(rdbNovo);
             Controls.Add(cmbCliente);
@@ -302,5 +345,9 @@
         private ComboBox cmbCliente;
         private RadioButton rdbNovo;
         private RadioButton rdbAntigo;
+        private TextBox txtValorEntrada;
+        private TextBox txtValorTotal;
+        private Label label8;
+        private Label label9;
     }
 }
