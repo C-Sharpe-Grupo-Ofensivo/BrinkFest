@@ -35,9 +35,9 @@
             txtId = new TextBox();
             txtNome = new TextBox();
             txtEndereco = new TextBox();
-            txtTelefone = new TextBox();
             btnGravar = new Button();
             btnCancelar = new Button();
+            txtTelefone = new MaskedTextBox();
             SuspendLayout();
             // 
             // label1
@@ -102,14 +102,6 @@
             txtEndereco.Size = new Size(208, 23);
             txtEndereco.TabIndex = 5;
             // 
-            // txtTelefone
-            // 
-            txtTelefone.BackColor = SystemColors.InactiveBorder;
-            txtTelefone.Location = new Point(460, 117);
-            txtTelefone.Name = "txtTelefone";
-            txtTelefone.Size = new Size(208, 23);
-            txtTelefone.TabIndex = 6;
-            // 
             // btnGravar
             // 
             btnGravar.BackColor = SystemColors.InactiveBorder;
@@ -133,15 +125,23 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // txtTelefone
+            // 
+            txtTelefone.Location = new Point(460, 117);
+            txtTelefone.Mask = "(00) 90000-0000";
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(121, 23);
+            txtTelefone.TabIndex = 8;
+            // 
             // TelaClienteForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(716, 256);
+            Controls.Add(txtTelefone);
             Controls.Add(btnCancelar);
             Controls.Add(btnGravar);
-            Controls.Add(txtTelefone);
             Controls.Add(txtEndereco);
             Controls.Add(txtNome);
             Controls.Add(txtId);
@@ -164,8 +164,8 @@
         private TextBox txtId;
         private TextBox txtNome;
         private TextBox txtEndereco;
-        private TextBox txtTelefone;
         private Button btnGravar;
         private Button btnCancelar;
+        private MaskedTextBox txtTelefone;
     }
 }
