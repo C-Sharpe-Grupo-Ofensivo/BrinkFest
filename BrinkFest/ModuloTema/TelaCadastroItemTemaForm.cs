@@ -55,11 +55,16 @@ namespace BrinkFest.WinApp.ModuloTema2
             txtTema.Text = tema.tema;
             txtId.Text = tema.id.ToString();
             txtNovoItem.Text = tema.tema;
+        
+
 
             foreach (Item item in tema.items)
             {
                 listItens.Items.Add(item);
             }
+         
+            
+
             //listItens.Items.AddRange(tema.items.ToArray());
 
 
@@ -67,28 +72,37 @@ namespace BrinkFest.WinApp.ModuloTema2
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-          
-            
-                string novoItem = txtNovoItem.Text;
-                decimal novoValor = Convert.ToDecimal(txtValor.Text);
 
-                Item itemTema = new Item(novoItem, novoValor);
-                
-                if(txtNovoItem.Text == "")
-                {
+            
+            string novoItem = txtNovoItem.Text;
+            decimal novoValor = Convert.ToDecimal(txtValor.Text);
+            Item itemTema = new Item(novoItem, novoValor);
+            decimal valorTotal = 0;
+
+
+            
+
+            if (txtNovoItem.Text == "")
+            {
                 MessageBox.Show("Campo item precisa ser preenchido");
-                }
-                else if(listItens.Items.Count == 0)
-                {
-                    listItens.Items.Add(itemTema);
-                }
-                else 
-                {
-                MessageBox.Show("Lista já preenchida");        
-                }
+            }
+            else /*if (listItens.Items.Count == 0 )*/
+            {
+                listItens.Items.Add(itemTema);
+            }
+            //else
+            //{
+            //    MessageBox.Show("Lista já preenchida");
+            //}
             
-       
-            
+            foreach (Item item in listItens.Items)
+            {
+                valorTotal += item.valor;
+            }
+            txtValorTotal.Text = valorTotal.ToString();
+
+
+
 
 
         }
@@ -100,7 +114,7 @@ namespace BrinkFest.WinApp.ModuloTema2
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            if(listItens.SelectedIndex != -1)
+            if (listItens.SelectedIndex != -1)
             {
                 listItens.Items.RemoveAt(listItens.SelectedIndex);
             }
@@ -108,7 +122,7 @@ namespace BrinkFest.WinApp.ModuloTema2
             {
                 MessageBox.Show("Selecione um elemento!");
             }
-            
+
         }
     }
 }

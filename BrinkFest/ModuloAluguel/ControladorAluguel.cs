@@ -1,11 +1,6 @@
 ﻿using BrinkFest.Dominio.ModuloCliente;
 using BrinkFest.Dominio.ModuloTema2;
 using BrinkFest.WinApp.ModuloAluguel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BrinkFest.Dominio.ModuloAluguel
 {

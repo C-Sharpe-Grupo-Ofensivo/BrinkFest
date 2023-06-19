@@ -1,21 +1,11 @@
-﻿using BrinkFest.Dominio.Compartilhado;
-using BrinkFest.Dominio.ModuloCliente;
+﻿using BrinkFest.Dominio.ModuloCliente;
 using BrinkFest.Dominio.ModuloTema2;
-
-
-
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BrinkFest.Dominio.ModuloAluguel
 {
     //Tela Cadastro Festa = Cliente, Tema, DataFesta, HoraInicio, HoraFinal, EndereçoDaFesta, ValorEntrada
-  
-        [Serializable]
+
+    [Serializable]
     public  class Aluguel : EntidadeBase<Aluguel>
     {
        

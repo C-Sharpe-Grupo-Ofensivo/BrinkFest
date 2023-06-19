@@ -1,11 +1,4 @@
-﻿using BrinkFest.Dominio.Compartilhado;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BrinkFest.Dominio.ModuloCliente
+﻿namespace BrinkFest.Dominio.ModuloCliente
 {
     [Serializable]
     public class Cliente : EntidadeBase<Cliente> 

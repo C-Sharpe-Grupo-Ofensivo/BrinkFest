@@ -1,11 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BrinkFest.Dominio.ModuloTema2
+﻿namespace BrinkFest.Dominio.ModuloTema2
 {
 
     public interface IRepositorioTema

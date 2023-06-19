@@ -41,6 +41,8 @@
             txtValor = new NumericUpDown();
             txtTema = new TextBox();
             btnRemover = new Button();
+            txtValorTotal = new TextBox();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)txtValor).BeginInit();
             SuspendLayout();
             // 
@@ -158,12 +160,30 @@
             btnRemover.UseVisualStyleBackColor = true;
             btnRemover.Click += btnRemover_Click;
             // 
+            // txtValorTotal
+            // 
+            txtValorTotal.Location = new Point(268, 379);
+            txtValorTotal.Name = "txtValorTotal";
+            txtValorTotal.Size = new Size(100, 23);
+            txtValorTotal.TabIndex = 45;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(201, 382);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 15);
+            label5.TabIndex = 46;
+            label5.Text = "Valor Total";
+            // 
             // TelaCadastroItemTemaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(726, 450);
+            Controls.Add(label5);
+            Controls.Add(txtValorTotal);
             Controls.Add(btnRemover);
             Controls.Add(txtTema);
             Controls.Add(txtValor);
@@ -199,5 +219,7 @@
         private NumericUpDown txtValor;
         private TextBox txtTema;
         private Button btnRemover;
+        private TextBox txtValorTotal;
+        private Label label5;
     }
 }
