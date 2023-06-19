@@ -55,15 +55,15 @@ namespace BrinkFest.WinApp.ModuloTema2
             txtTema.Text = tema.tema;
             txtId.Text = tema.id.ToString();
             txtNovoItem.Text = tema.tema;
-        
+
 
 
             foreach (Item item in tema.items)
             {
                 listItens.Items.Add(item);
             }
-         
-            
+
+
 
             //listItens.Items.AddRange(tema.items.ToArray());
 
@@ -73,14 +73,14 @@ namespace BrinkFest.WinApp.ModuloTema2
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
 
-            
+
             string novoItem = txtNovoItem.Text;
             decimal novoValor = Convert.ToDecimal(txtValor.Text);
             Item itemTema = new Item(novoItem, novoValor);
             decimal valorTotal = 0;
 
 
-            
+
 
             if (txtNovoItem.Text == "")
             {
@@ -94,7 +94,7 @@ namespace BrinkFest.WinApp.ModuloTema2
             //{
             //    MessageBox.Show("Lista já preenchida");
             //}
-            
+
             foreach (Item item in listItens.Items)
             {
                 valorTotal += item.valor;

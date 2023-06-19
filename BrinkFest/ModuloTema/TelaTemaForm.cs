@@ -24,7 +24,7 @@ namespace BrinkFest.WinApp.ModuloTema2
 
             txtTema2.Text = tema.tema;
         }
- 
+
 
         private void btnGravar_Click_1(object sender, EventArgs e)
         {
@@ -38,7 +38,7 @@ namespace BrinkFest.WinApp.ModuloTema2
 
                 DialogResult = DialogResult.None;
             }
-            
+
 
             if (txtTema2.Text == "")
             {

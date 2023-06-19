@@ -90,7 +90,6 @@
             txtId.Size = new Size(120, 23);
             txtId.TabIndex = 7;
             txtId.Text = "0";
-            txtId.TextAlign = HorizontalAlignment.Right;
             // 
             // TelaTemaForm
             // 
