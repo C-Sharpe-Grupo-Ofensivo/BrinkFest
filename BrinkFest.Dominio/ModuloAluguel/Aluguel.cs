@@ -59,7 +59,7 @@ namespace BrinkFest.Dominio.ModuloAluguel
 
         public override string ToString()
         {
-            return "Id: " + id + ", " + cliente + ", Tema" + tema + ", Data: " + data;
+            return "Id: " + id + ", " + cliente + ", Tema" + tema.tema + ", Data: " + data;
         }
 
         public override void AtualizarInformacoes(Aluguel registroAtualizado)

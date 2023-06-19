@@ -65,8 +65,10 @@ namespace BrinkFest.WinApp.ModuloAluguel
 
             if (aluguelSelecionado.tema != null)
             {
+                
                 chkSelecionarTema.Checked = true;
-                cmbTemas.SelectedItem = aluguelSelecionado.tema;
+                cmbTemas.SelectedIndex = 0;
+                cmbTemas.SelectedItem = aluguelSelecionado.tema.ToString();
             }
 
             if (aluguelSelecionado.cliente != null)

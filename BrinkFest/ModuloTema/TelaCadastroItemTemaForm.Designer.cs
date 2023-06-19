@@ -164,7 +164,7 @@
             // 
             // txtValorTotal
             // 
-            txtValorTotal.Location = new Point(268, 379);
+            txtValorTotal.Location = new Point(393, 120);
             txtValorTotal.Name = "txtValorTotal";
             txtValorTotal.Size = new Size(100, 23);
             txtValorTotal.TabIndex = 45;
@@ -172,7 +172,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(201, 382);
+            label5.Location = new Point(324, 123);
             label5.Name = "label5";
             label5.Size = new Size(61, 15);
             label5.TabIndex = 46;

@@ -67,5 +67,11 @@ namespace BrinkFest.Dominio.ModuloTema2
 
         //    percentualConcluido = Math.Round(resultado, 2);
         //}
+
+        public override string ToString()
+        {
+            return "Id: " + id + ", " + tema ;
+        }
+ 
     }
 }
