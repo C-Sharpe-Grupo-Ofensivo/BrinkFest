@@ -48,7 +48,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(225, 29);
+            label2.Location = new Point(225, 34);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // txtTema2
             // 
-            txtTema2.Location = new Point(269, 26);
+            txtTema2.Location = new Point(269, 31);
             txtTema2.Name = "txtTema2";
             txtTema2.Size = new Size(297, 23);
             txtTema2.TabIndex = 3;
@@ -64,7 +64,7 @@
             // btnGravar
             // 
             btnGravar.DialogResult = DialogResult.OK;
-            btnGravar.Location = new Point(100, 117);
+            btnGravar.Location = new Point(100, 109);
             btnGravar.Name = "btnGravar";
             btnGravar.Size = new Size(103, 52);
             btnGravar.TabIndex = 4;
@@ -74,7 +74,7 @@
             // btnCancelar
             // 
             btnCancelar.DialogResult = DialogResult.Cancel;
-            btnCancelar.Location = new Point(476, 117);
+            btnCancelar.Location = new Point(463, 109);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 52);
             btnCancelar.TabIndex = 5;
@@ -96,7 +96,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(629, 193);
+            ClientSize = new Size(570, 178);
             Controls.Add(txtId);
             Controls.Add(btnCancelar);
             Controls.Add(btnGravar);

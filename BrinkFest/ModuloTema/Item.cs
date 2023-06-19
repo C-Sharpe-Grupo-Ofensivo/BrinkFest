@@ -33,7 +33,7 @@ namespace BrinkFest.WinApp.ModuloTema2
 
         public override string ToString()
         {
-            return $"(Tema: {tema} Item: {item}   Valor: {valor})" ;
+            return $"Item: {item}   Valor: R${valor}" ;
         }
 
         public override bool Equals(object? obj)

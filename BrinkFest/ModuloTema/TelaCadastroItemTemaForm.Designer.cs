@@ -37,9 +37,10 @@
             txtNovoItem = new TextBox();
             btnCancelar = new Button();
             btnGravar = new Button();
-            cmbTema = new ComboBox();
             label4 = new Label();
             txtValor = new NumericUpDown();
+            txtTema = new TextBox();
+            btnRemover = new Button();
             ((System.ComponentModel.ISupportInitialize)txtValor).BeginInit();
             SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             // 
             listItens.FormattingEnabled = true;
             listItens.ItemHeight = 15;
-            listItens.Location = new Point(28, 139);
+            listItens.Location = new Point(28, 149);
             listItens.Name = "listItens";
             listItens.Size = new Size(668, 214);
             listItens.TabIndex = 4;
@@ -122,16 +123,6 @@
             btnGravar.Text = "Gravar";
             btnGravar.UseVisualStyleBackColor = true;
             // 
-            // cmbTema
-            // 
-            cmbTema.DisplayMember = "nome";
-            cmbTema.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbTema.FormattingEnabled = true;
-            cmbTema.Location = new Point(104, 51);
-            cmbTema.Name = "cmbTema";
-            cmbTema.Size = new Size(137, 23);
-            cmbTema.TabIndex = 40;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -149,15 +140,34 @@
             txtValor.Size = new Size(120, 23);
             txtValor.TabIndex = 42;
             // 
+            // txtTema
+            // 
+            txtTema.Location = new Point(104, 51);
+            txtTema.Name = "txtTema";
+            txtTema.ReadOnly = true;
+            txtTema.Size = new Size(100, 23);
+            txtTema.TabIndex = 43;
+            // 
+            // btnRemover
+            // 
+            btnRemover.Location = new Point(529, 118);
+            btnRemover.Name = "btnRemover";
+            btnRemover.Size = new Size(167, 23);
+            btnRemover.TabIndex = 44;
+            btnRemover.Text = "Remover";
+            btnRemover.UseVisualStyleBackColor = true;
+            btnRemover.Click += btnRemover_Click;
+            // 
             // TelaCadastroItemTemaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(726, 450);
+            Controls.Add(btnRemover);
+            Controls.Add(txtTema);
             Controls.Add(txtValor);
             Controls.Add(label4);
-            Controls.Add(cmbTema);
             Controls.Add(btnGravar);
             Controls.Add(btnCancelar);
             Controls.Add(txtNovoItem);
@@ -185,8 +195,9 @@
         private TextBox txtNovoItem;
         private Button btnCancelar;
         private Button btnGravar;
-        private ComboBox cmbTema;
         private Label label4;
         private NumericUpDown txtValor;
+        private TextBox txtTema;
+        private Button btnRemover;
     }
 }

@@ -110,7 +110,7 @@ namespace BrinkFest.WinApp.ModuloTema2
         public override void Adicionar()
         {
             Tema temaSelecionado = ObterTemaSelecionada();
-            List<Tema> temas = repositorioTema.SelecionarTodos();
+            //List<Tema> temas = repositorioTema.SelecionarTodos();
  
             if (temaSelecionado == null)
             {
@@ -119,7 +119,7 @@ namespace BrinkFest.WinApp.ModuloTema2
                 return;
             }
 
-            TelaCadastroItemTemaForm telaCadastroItemTema = new TelaCadastroItemTemaForm(temas);
+            TelaCadastroItemTemaForm telaCadastroItemTema = new TelaCadastroItemTemaForm(temaSelecionado);
 
             DialogResult opcaoEscolhida = telaCadastroItemTema.ShowDialog();
 

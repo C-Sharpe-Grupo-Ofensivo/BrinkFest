@@ -34,13 +34,13 @@ namespace BrinkFest.WinApp.ModuloTema2
             tema.Name = "tema";
             tema.HeaderText = "Tema";
 
-            DataGridViewTextBoxColumn item = new DataGridViewTextBoxColumn();
-            item.Name = "item";
-            item.HeaderText = "Item";
+            //DataGridViewTextBoxColumn item = new DataGridViewTextBoxColumn();
+            //item.Name = "item";
+            //item.HeaderText = "Item";
 
             gridTema.Columns.Add(id);
             gridTema.Columns.Add(tema);
-            gridTema.Columns.Add(item);
+            //gridTema.Columns.Add(item);
 
         }
         public void AtualizarTema(List<Tema> temas)
@@ -49,7 +49,7 @@ namespace BrinkFest.WinApp.ModuloTema2
 
             foreach (Tema tema in temas)
             {
-                gridTema.Rows.Add(tema.id, tema.tema, tema.items);
+                gridTema.Rows.Add(tema.id, tema.tema/*, tema.items */);
             }
 
         }
