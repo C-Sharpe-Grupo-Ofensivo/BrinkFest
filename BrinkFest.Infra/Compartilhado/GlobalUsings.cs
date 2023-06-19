@@ -1,0 +1,1 @@
+﻿global using BrinkFest.Infra.Arquivo.Compartilhado;

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using BrinkFest.Dominio.Compartilhado;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.Compartilhado
+namespace BrinkFest.Infra.Arquivo.Compartilhado
 {
     public abstract class RepositorioEmArquivoBase<T> where T : EntidadeBase<T>
     {

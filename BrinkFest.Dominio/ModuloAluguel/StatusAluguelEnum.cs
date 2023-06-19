@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloAluguel
+namespace BrinkFest.Dominio.ModuloAluguel
 {
     public enum StatusAluguelEnum
     {
-        Todos, Passados, Futuros
+        Todos, Aberto, Fechado
     }
 }

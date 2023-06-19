@@ -1,4 +1,7 @@
-﻿using BrinkFest.WinApp.ModuloCliente;
+﻿using BrinkFest.Dominio.ModuloAluguel;
+using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema2;
+using BrinkFest.WinApp.ModuloCliente;
 
 using BrinkFest.WinApp.ModuloTema2;
 using System;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloCliente
+namespace BrinkFest.Dominio.ModuloCliente
 {
     public interface IRepositorioCliente
     {

@@ -5,12 +5,12 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Threading.Tasks;
-using BrinkFest.WinApp.ModuloCliente;
+using BrinkFest.Dominio.ModuloCliente;
 
-using BrinkFest.WinApp.ModuloAluguel;
-using BrinkFest.WinApp.ModuloTema2;
+using BrinkFest.Dominio.ModuloAluguel;
+using BrinkFest.Dominio.ModuloTema2;
 
-namespace BrinkFest.WinApp.Compartilhado
+namespace BrinkFest.Infra.Arquivo.Compartilhado
 {
     public class ContextoDados //container
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloTema2
+namespace BrinkFest.Dominio.ModuloTema2
 {
 
     public interface IRepositorioTema

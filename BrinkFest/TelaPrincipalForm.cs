@@ -1,4 +1,10 @@
-using BrinkFest.WinApp.Compartilhado;
+using BrinkFest.Dominio.ModuloAluguel;
+using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema2;
+using BrinkFest.Infra.Arquivo.Compartilhado;
+using BrinkFest.Infra.Arquivo.ModuloAluguel;
+using BrinkFest.Infra.Arquivo.ModuloCliente;
+using BrinkFest.Infra.Arquivo.ModuloTema2;
 using BrinkFest.WinApp.ModuloAluguel;
 using BrinkFest.WinApp.ModuloCliente;
 

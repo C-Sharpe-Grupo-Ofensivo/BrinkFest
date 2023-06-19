@@ -16,6 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BrinkFest.Dominio\BrinkFest.Dominio.csproj" />
+    <ProjectReference Include="..\BrinkFest.Infra\BrinkFest.Infra.Arquivo.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

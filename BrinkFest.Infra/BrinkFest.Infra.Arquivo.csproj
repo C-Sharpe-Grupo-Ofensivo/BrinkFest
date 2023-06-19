@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BrinkFest.Dominio\BrinkFest.Dominio.csproj" />
+  </ItemGroup>
+
 </Project>

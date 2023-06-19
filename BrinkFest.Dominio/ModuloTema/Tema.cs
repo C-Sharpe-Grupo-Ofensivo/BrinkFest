@@ -1,10 +1,12 @@
-﻿using System;
+﻿using BrinkFest.Dominio.Compartilhado;
+using BrinkFest.Dominio.ModuloTema;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloTema2
+namespace BrinkFest.Dominio.ModuloTema2
 {
     public class Tema : EntidadeBase<Tema>
     {

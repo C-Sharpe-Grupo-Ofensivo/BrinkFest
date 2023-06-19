@@ -1,4 +1,6 @@
-﻿using BrinkFest.WinApp.ModuloCliente;
+﻿using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema;
+using BrinkFest.Dominio.ModuloTema2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

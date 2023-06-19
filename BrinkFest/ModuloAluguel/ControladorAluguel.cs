@@ -1,12 +1,13 @@
-﻿using BrinkFest.WinApp.ModuloCliente;
-using BrinkFest.WinApp.ModuloTema2;
+﻿using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema2;
+using BrinkFest.WinApp.ModuloAluguel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloAluguel
+namespace BrinkFest.Dominio.ModuloAluguel
 {
     public class ControladorAluguel : ControladorBase
     {

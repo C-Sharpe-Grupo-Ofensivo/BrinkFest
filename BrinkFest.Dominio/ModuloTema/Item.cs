@@ -1,10 +1,11 @@
-﻿using System;
+﻿using BrinkFest.Dominio.ModuloTema2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloTema2
+namespace BrinkFest.Dominio.ModuloTema
 {
     [Serializable]
     public class Item
@@ -14,9 +15,9 @@ namespace BrinkFest.WinApp.ModuloTema2
         public Tema tema;
         public bool concluido;
 
-        public Item () 
+        public Item()
         {
-            
+
         }
 
         public Item(string item, decimal valor)
@@ -28,20 +29,20 @@ namespace BrinkFest.WinApp.ModuloTema2
         public Item(string item, Tema tema)
         {
             this.item = item;
-          
+
         }
 
         public override string ToString()
         {
-            return $"Item: {item}   Valor: R${valor}" ;
+            return $"Item: {item}   Valor: R${valor}";
         }
 
         public override bool Equals(object? obj)
         {
-            return obj is Item itens && 
+            return obj is Item itens &&
                           item == itens.item &&
                           tema == itens.tema;
-                
+
         }
         public void Desmarcar()
         {

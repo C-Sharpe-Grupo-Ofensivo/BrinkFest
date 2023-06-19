@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrinkFest.WinApp", "BrinkFest\BrinkFest.WinApp.csproj", "{F8BC776D-E0B8-4E64-BCDD-2C9F224BF118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrinkFest.WinApp", "BrinkFest\BrinkFest.WinApp.csproj", "{F8BC776D-E0B8-4E64-BCDD-2C9F224BF118}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentação", "1 - Apresentação", "{5FE8886E-CDE3-4AC8-8488-D98ECAA82BC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Dominio", "2 - Dominio", "{03DA047B-38FD-4E44-B696-0F1B221A5046}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{1B6FBAF4-A1FC-47C8-BCC3-7B79133328D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrinkFest.Dominio", "BrinkFest.Dominio\BrinkFest.Dominio.csproj", "{92FD3C67-B211-49F9-8228-67A8B8DF5CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrinkFest.Infra.Arquivo", "BrinkFest.Infra\BrinkFest.Infra.Arquivo.csproj", "{BEA315D2-4223-4A58-B35E-05104A727995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +25,22 @@ Global
 		{F8BC776D-E0B8-4E64-BCDD-2C9F224BF118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8BC776D-E0B8-4E64-BCDD-2C9F224BF118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8BC776D-E0B8-4E64-BCDD-2C9F224BF118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92FD3C67-B211-49F9-8228-67A8B8DF5CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FD3C67-B211-49F9-8228-67A8B8DF5CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FD3C67-B211-49F9-8228-67A8B8DF5CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92FD3C67-B211-49F9-8228-67A8B8DF5CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA315D2-4223-4A58-B35E-05104A727995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA315D2-4223-4A58-B35E-05104A727995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA315D2-4223-4A58-B35E-05104A727995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA315D2-4223-4A58-B35E-05104A727995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F8BC776D-E0B8-4E64-BCDD-2C9F224BF118} = {5FE8886E-CDE3-4AC8-8488-D98ECAA82BC4}
+		{92FD3C67-B211-49F9-8228-67A8B8DF5CBB} = {03DA047B-38FD-4E44-B696-0F1B221A5046}
+		{BEA315D2-4223-4A58-B35E-05104A727995} = {1B6FBAF4-A1FC-47C8-BCC3-7B79133328D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB0B8C6D-EB3A-4EC5-9950-DC822568DB77}

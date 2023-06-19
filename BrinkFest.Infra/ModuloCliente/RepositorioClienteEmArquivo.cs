@@ -1,11 +1,13 @@
-﻿using BrinkFest.WinApp.Compartilhado;
+﻿using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Infra.Arquivo.Compartilhado;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrinkFest.WinApp.ModuloCliente
+namespace BrinkFest.Infra.Arquivo.ModuloCliente
 {
     public class RepositorioClienteEmArquivo : RepositorioEmArquivoBase<Cliente>, IRepositorioCliente
     {
