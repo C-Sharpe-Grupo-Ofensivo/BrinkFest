@@ -56,6 +56,10 @@ namespace BrinkFest.Infra.Arquivo.Compartilhado
         {
             return ObterRegistros();
         }
+        public List<T> SelecionarTodosItens()
+        {
+            return ObterRegistros();
+        }
 
         private void AtualizarContador()
         {

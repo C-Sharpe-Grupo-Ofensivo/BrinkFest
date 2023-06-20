@@ -268,6 +268,7 @@
             txtValorTotal.ReadOnly = true;
             txtValorTotal.Size = new Size(152, 23);
             txtValorTotal.TabIndex = 44;
+            txtValorTotal.TabStop = false;
             // 
             // label8
             // 
@@ -316,7 +317,7 @@
             Controls.Add(txtId);
             Controls.Add(label1);
             Name = "TelaAluguelForm";
-            Text = "TelaAluguelForm";
+            ShowIcon = false;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

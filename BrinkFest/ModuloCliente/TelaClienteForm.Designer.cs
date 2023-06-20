@@ -150,7 +150,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "TelaClienteForm";
-            Text = "TelaClienteForm";
+            ShowIcon = false;
             ResumeLayout(false);
             PerformLayout();
         }

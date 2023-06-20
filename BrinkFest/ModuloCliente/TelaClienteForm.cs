@@ -57,10 +57,8 @@ namespace BrinkFest.WinApp.ModuloCliente
             {
                 MessageBox.Show("Campo Endereço precisa ser preenchido");
             }
-            if (txtTelefone.Text == "")
-            {
-                MessageBox.Show("Campo Telefone precisa ser preenchido");
-            }
+
+
         }
     }
 }

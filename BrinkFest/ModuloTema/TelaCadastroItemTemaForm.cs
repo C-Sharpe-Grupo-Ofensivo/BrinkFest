@@ -54,7 +54,7 @@ namespace BrinkFest.WinApp.ModuloTema2
 
             txtTema.Text = tema.tema;
             txtId.Text = tema.id.ToString();
-            txtNovoItem.Text = tema.tema;
+
 
 
 
@@ -100,6 +100,7 @@ namespace BrinkFest.WinApp.ModuloTema2
                 valorTotal += item.valor;
             }
             txtValorTotal.Text = valorTotal.ToString();
+            itemTema.valor = valorTotal;
 
 
 

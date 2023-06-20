@@ -104,7 +104,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "TelaTemaForm";
-            Text = "TeleTema2Form";
+            ShowIcon = false;
             ResumeLayout(false);
             PerformLayout();
         }

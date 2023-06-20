@@ -1,4 +1,6 @@
-﻿namespace BrinkFest.Dominio.ModuloTema2
+﻿using BrinkFest.Dominio.ModuloTema;
+
+namespace BrinkFest.Dominio.ModuloTema2
 {
 
     public interface IRepositorioTema
@@ -12,6 +14,7 @@
         void Excluir(Tema tema2Selecionado);
 
         List<Tema> SelecionarTodos();
+      
 
         Tema SelecionarPorId(int id);
     }

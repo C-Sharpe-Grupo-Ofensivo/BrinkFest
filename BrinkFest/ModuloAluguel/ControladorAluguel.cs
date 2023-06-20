@@ -1,4 +1,5 @@
 ﻿using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema;
 using BrinkFest.Dominio.ModuloTema2;
 using BrinkFest.WinApp.ModuloAluguel;
 
@@ -9,6 +10,7 @@ namespace BrinkFest.Dominio.ModuloAluguel
         private IRepositorioCliente repositorioCliente;
         private IRepositorioAluguel repositorioAluguel;
         private IRepositorioTema repositorioTema2;
+        
         private TabelaAluguelControl tabelaAluguel;
 
         public ControladorAluguel(IRepositorioCliente repositorioCliente, IRepositorioAluguel repositorioAluguel, IRepositorioTema repositorioTema2)
@@ -33,6 +35,9 @@ namespace BrinkFest.Dominio.ModuloAluguel
         {
             List<Cliente> clientes = repositorioCliente.SelecionarTodos();
             List<Tema> temas = repositorioTema2.SelecionarTodos();
+            
+         
+          
             TelaAluguelForm telaAluguel = new TelaAluguelForm(clientes, temas);
 
             DialogResult opcaoEscolhida = telaAluguel.ShowDialog();
@@ -63,6 +68,7 @@ namespace BrinkFest.Dominio.ModuloAluguel
 
             List<Cliente> clientes = repositorioCliente.SelecionarTodos();
             List<Tema> temas = repositorioTema2.SelecionarTodos();
+         
             TelaAluguelForm telaAluguel = new TelaAluguelForm(clientes, temas);
 
             telaAluguel.ConfigurarTela(aluguelSelecionado);

@@ -110,6 +110,7 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.DialogResult = DialogResult.Cancel;
             btnCancelar.Location = new Point(592, 369);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(122, 69);
@@ -200,7 +201,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "TelaCadastroItemTemaForm";
-            Text = "TelaCadastroItemTemaForm";
+            ShowIcon = false;
             ((System.ComponentModel.ISupportInitialize)txtValor).EndInit();
             ResumeLayout(false);
             PerformLayout();

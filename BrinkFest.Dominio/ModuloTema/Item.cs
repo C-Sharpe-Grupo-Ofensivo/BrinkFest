@@ -3,7 +3,7 @@
 namespace BrinkFest.Dominio.ModuloTema
 {
     [Serializable]
-    public class Item
+    public class Item : EntidadeBase<Item>
     {
         public string item;
         public decimal valor;
@@ -27,10 +27,7 @@ namespace BrinkFest.Dominio.ModuloTema
 
         }
 
-        public override string ToString()
-        {
-            return $"Item: {item}   Valor: R${valor}";
-        }
+       
 
         public override bool Equals(object? obj)
         {
@@ -46,6 +43,21 @@ namespace BrinkFest.Dominio.ModuloTema
         public void Concluir()
         {
             concluido = true;
+        }
+
+        public override void AtualizarInformacoes(Item registroAtualizado)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string[] Validar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return $"Item: {item}   Valor: R${valor}";
         }
     }
 }

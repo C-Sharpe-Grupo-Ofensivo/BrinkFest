@@ -1,4 +1,5 @@
 ﻿using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema;
 using BrinkFest.Dominio.ModuloTema2;
 
 namespace BrinkFest.Dominio.ModuloAluguel
@@ -19,6 +20,7 @@ namespace BrinkFest.Dominio.ModuloAluguel
         public Cliente cliente;
 
         public Tema tema;
+     
 
         public string local;
 
@@ -39,6 +41,7 @@ namespace BrinkFest.Dominio.ModuloAluguel
             this.cliente = cliente;
             this.tema = tema;
             this.local = local;
+            
 
         }
 

@@ -1,5 +1,6 @@
 ﻿using BrinkFest.Dominio.ModuloAluguel;
 using BrinkFest.Dominio.ModuloCliente;
+using BrinkFest.Dominio.ModuloTema;
 using BrinkFest.Dominio.ModuloTema2;
 
 namespace BrinkFest.WinApp.ModuloAluguel
@@ -13,6 +14,9 @@ namespace BrinkFest.WinApp.ModuloAluguel
 
             CarregarClientes(clientes);
             CarregarTemas(temas);
+
+
+
         }
 
         private void CarregarClientes(List<Cliente> clientes)
@@ -28,8 +32,19 @@ namespace BrinkFest.WinApp.ModuloAluguel
             foreach (Tema tema in temas)
             {
                 cmbTemas.Items.Add(tema);
+
             }
         }
+
+        private void CarregarItem(List<Item> itens)
+        {
+            foreach (Item item in itens)
+            {
+                txtValorTotal.Text = item.valor.ToString();
+            }
+        }
+
+
 
         public Aluguel ObterAluguel()
         {
@@ -47,6 +62,7 @@ namespace BrinkFest.WinApp.ModuloAluguel
             Cliente cliente = (Cliente)cmbCliente.SelectedItem;
             Tema tema = (Tema)cmbTemas.SelectedItem;
 
+
             Aluguel aluguel = new Aluguel(id, data, horarioInicio, horarioFinal, cliente, tema, local);
 
             if (id > 0)
@@ -55,17 +71,26 @@ namespace BrinkFest.WinApp.ModuloAluguel
             return aluguel;
         }
 
+
+
+
         public void ConfigurarTela(Aluguel aluguelSelecionado)
         {
+
             txtId.Text = aluguelSelecionado.id.ToString();
 
             txtData.Value = aluguelSelecionado.data;
             txtHorarioInicio.Value = DateTime.Now.Date.Add(aluguelSelecionado.horarioInicio);
             txtHorarioFinal.Value = DateTime.Now.Date.Add(aluguelSelecionado.horarioFinal);
 
+            decimal valorTotal = 0;
+
+
+
+
             if (aluguelSelecionado.tema != null)
             {
-                
+
                 chkSelecionarTema.Checked = true;
                 cmbTemas.SelectedIndex = 0;
                 cmbTemas.SelectedItem = aluguelSelecionado.tema.ToString();
@@ -107,19 +132,28 @@ namespace BrinkFest.WinApp.ModuloAluguel
         private void rdbNovo_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbNovo.Checked == true)
+            {
                 rdbAntigo.Checked = false;
+            }
+
 
         }
 
         private void rdbAntigo_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbAntigo.Checked == true)
+            {
                 rdbNovo.Checked = false;
+
+
+
+            }
+
         }
 
         private void cmbTemas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
